@@ -1,0 +1,22 @@
+{
+  "name": "terminal-dict",
+  "version": "0.0.14",
+  "description": "terminal-dict",
+  "author": {
+    "name": "fengshq"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/CircleSmall/terminal-dict.git"
+  },
+  "dependencies": {
+    "colors": "^1.1.2",
+    "consoler": "^0.2.0",
+    "keypress": "~0.2.1",
+    "sdk": "^0.5.0",
+    "term-canvas": "0.0.5"
+  },
+  "bin": {
+    "yd": "./bin/cli"
+  }
+}

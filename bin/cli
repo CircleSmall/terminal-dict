@@ -1,0 +1,23 @@
+#!/usr/bin/env node
+var simple = require("../libs/simple");
+var detail = require("../libs/detail");
+var help = require("../libs/help");
+var colors = require("colors");
+
+var param = process.argv.slice(2);
+ 
+var input = param[0];
+var mode = param[1];
+
+if(!input) {
+    console.log(colors.grey("请输入要查询的词"))
+    return;
+}
+
+if(input == "--help") {
+    help();
+} else if (mode == "--all" || mode == "-all"){
+    detail(input);
+} else {
+    simple(input,mode);
+}
