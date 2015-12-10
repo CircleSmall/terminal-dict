@@ -31,7 +31,7 @@ module.exports = function(input, _mode) {
             console.log(colors.red('该词条没有此模板'))
             return;
         } else if (_mode && data[_mode]) {
-            str = templates[mode].render(data[mode]);
+            str = templates[_mode].render(data[_mode]);
         } else if (!_mode) {
             //如果没有参数,默认查词逻辑
             var mode,modeData;
